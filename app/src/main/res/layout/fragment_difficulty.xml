@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.DifficultyFragment">
+
+    <Button
+        android:id="@+id/easyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/difficulty_easy"
+        android:textColor="?android:attr/textColorTertiary"
+        android:textSize="@dimen/rounded_button_text_size" />
+
+    <Button
+        android:id="@+id/mediumButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/difficulty_medium"
+        android:textColor="?android:attr/textColorTertiary"
+        android:textSize="@dimen/rounded_button_text_size" />
+
+    <Button
+        android:id="@+id/hardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/difficulty_hard"
+        android:textColor="?android:attr/textColorTertiary"
+        android:textSize="@dimen/rounded_button_text_size" />
+
+</LinearLayout>

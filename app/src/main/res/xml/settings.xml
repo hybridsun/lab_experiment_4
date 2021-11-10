@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/appearance">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="show_status_bar"
+            android:title="@string/show_status_bar" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="night_mode"
+            android:title="@string/night_mode" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="animations"
+            android:title="@string/animations" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="maximization"
+            android:title="@string/board_maximization"
+            android:summary="@string/board_maximization_summary"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about">
+        <Preference
+            android:key="libraries"
+            android:summary="@string/libraries_summary"
+            android:title="@string/libraries" />
+    </PreferenceCategory>
+</PreferenceScreen>

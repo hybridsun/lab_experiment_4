@@ -1,0 +1,27 @@
+name: CD (tag)
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: 8
+      - name: Build APK
+        run: ./gradlew assembleDebug
+      - name: Create release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{github.token}}
+          tag: ${{github.ref}}
+          file: app/build/outputs/apk/debug/app-debug.apk
+          asset_name: AndTTT.apk
+          overwrite: true
